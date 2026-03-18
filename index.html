@@ -1,60 +1,108 @@
 <html>
 <head>
-    <title>Portfolio</title>
+    <title>Krishna Portfolio</title>
     <style>
-        p{
-            color: rgb(119, 0, 255);
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 300%;
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
         }
+
         h1{
             text-align: center;
-            font-size: xx-large;
-            color: blue;
-            font-style: oblique;
-            text-decoration: none;
+            padding: 20px;
+            color: #38bdf8;
         }
-        h1:hover{
-            text-decoration: underline;
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
         }
-        h2{
-            text-align: right;
-        }
-        body{
-            background-image: url(file:///C:/Users/HP/Downloads/html%20project%201/Img2.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        a{
-            font-family: 'Times New Roman', Times, serif;
-            font-size: larger;
-            text-decoration: none;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
+
         img{
-            border-radius: 5%;
+            width: 220px;
+            height: 300px;
+            border-radius: 10px;
+            margin-right: 40px;
+            border: 3px solid white;
+        }
+
+        .content{
+            max-width: 500px;
+        }
+
+        .content h2{
+            color: #22c55e;
+        }
+
+        .content p{
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contact{
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .links{
+            margin-top: 30px;
+        }
+
+        .links a{
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px 15px;
+            background-color: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .links a:hover{
+            background-color: #0ea5e9;
         }
     </style>
 </head>
+
 <body>
-    <h1>Portfolio</h1>
-    <img src="file:///C:/Users/HP/Downloads/html%20project%201/Img.jpg" width="200" height="200" align="right" border="5">
-<p> Hey I am Krishna Prasad <br> You Can Call Me as KP<br> Basically I'm persuing My Degree in BCA<br>
-From Bharath University</p>
-<h2 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Ph.no: 9619398229<br> Email: krishnaprasad.kp723@gmail.com</h2>
-<script>
-    function mouseOver(){
-        document.getElementById("demo").style.color="red";
-    }
-    function mouseOut(){
-        document.getElementById("demo").style.color="blue";
-    }
-</script>
-<a href="file:///C:/Users/HP/Downloads/html%20project%201/index.html">Sample Project of HTMl</a><br>
-<a href="file:///C:/Users/HP/Downloads/html%20project%201/Portfolio1.html">Marksheet</a><br>
-<a href="file:///C:/Users/HP/Downloads/html%20project%201/Resume.pdf">Resume</a>
+
+<h1>My Portfolio</h1>
+
+<div class="container">
+
+    <img src="file:///C:/Users/HP/Downloads/html%20project%201/WhatsApp%20Image%202026-03-15%20at%201.21.20%20PM.jpeg" alt="Profile Photo">
+
+    <div class="content">
+        <h2>Krishna Prasad</h2>
+        <h3>BCA Student | Aspiring Software Developer</h3>
+
+        <p>
+            I am a Bachelor of Computer Applications student passionate about 
+            web development and software development. I enjoy building simple 
+            and useful applications while continuously learning new technologies.
+        </p>
+
+        <p>
+            I have worked on projects like Student Management System and Portfolio Website.
+            I am interested in Java, Python, and web technologies.
+        </p>
+
+        <div class="contact">
+            📞 Phone: 9619398229 <br>
+            📧 Email: krishnaprasad.kp723@gmail.com
+        </div>
+
+        <div class="links">
+            <a href="file:///C:/Users/HP/Downloads/html%20project%201/Portfolio1.html">View Projects</a>
+            <a href="file:///C:/Users/HP/Downloads/html%20project%201/resume_sample1.pdf">Resume</a>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
